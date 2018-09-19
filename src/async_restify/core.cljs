@@ -1,9 +1,9 @@
-(ns async.restify.core
+(ns async-restify.core
   (:require
    #_[async-error.core :refer-macros [go-try <?] :refer [throw-err]]
    [oops.core :as oops]
    [restify.core :as restify]
-   [async.async.core :as async :refer-macros [go <! chan]] ))
+   [cljs-async.core :as async :refer-macros [go <! chan]] ))
 
 
 (defn run-response [ch context]
